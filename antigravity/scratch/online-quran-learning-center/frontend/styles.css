@@ -1,0 +1,81 @@
+/* Bespoke Typography & Smooth Aesthetics */
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Playfair+Display:wght@600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --primary-emerald: #064e3b;
+  --secondary-emerald: #047857;
+  --accent-gold: #d97706;
+  --warm-cream: #fdfbf7;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow-x: hidden;
+  background-color: #fdfbf7;
+  color: #1e293b;
+}
+
+/* Subtle Islamic Star Motif Watermark for Hero Background */
+.islamic-pattern {
+  background-image: radial-gradient(#064e3b 0.75px, transparent 0.75px), radial-gradient(#d97706 0.75px, #fdfbf7 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
+
+/* Active Currency Button Styling */
+.currency-btn {
+  color: #475569;
+  background-color: transparent;
+}
+.currency-btn:hover {
+  background-color: #f1f5f9;
+}
+.currency-btn.active-curr {
+  background-color: #064e3b;
+  color: #ffffff;
+  box-shadow: 0 2px 4px rgba(6, 78, 59, 0.25);
+}
+
+/* Active Timezone Button Styling */
+.tz-btn.active-tz {
+  background-color: #047857 !important;
+  color: #ffffff !important;
+  border-color: #10b981 !important;
+  box-shadow: 0 4px 12px rgba(4, 120, 87, 0.35);
+}
+
+/* 3D Watch Interactive Container */
+.watch-container {
+  perspective: 1000px;
+  transition: transform 0.2s cubic-bezier(0.2, 0, 0.2, 1);
+}
+
+#watchCanvas {
+  filter: drop-shadow(0 20px 25px rgba(0, 0, 0, 0.45));
+  transition: transform 0.1s ease-out;
+}
+
+/* Smooth modal transition */
+#trial-modal.active {
+  display: flex !important;
+  opacity: 1 !important;
+}
+
+#trial-modal.active #trial-modal-content {
+  transform: scale(1) !important;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #047857;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #064e3b;
+}
